@@ -10,7 +10,7 @@ export const Auth = (props) => {
     try{
    const result =   await signInWithPopup(auth,provider)
    cookies.set("auth-token",result.user.refreshToken)
-   setIsAut(true)
+   setIsAuth(true)
     } catch(err){
         console.error(err);
     }
