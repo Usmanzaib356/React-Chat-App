@@ -5,7 +5,7 @@ import Cookies from "universal-cookie";
 const cookies = new Cookies()
 
 export const Auth = (props) => {
-    const {setIsAut} = props
+    const {setIsAuth} = props
   const signInWithGoogle = async ()=>{
     try{
    const result =   await signInWithPopup(auth,provider)
